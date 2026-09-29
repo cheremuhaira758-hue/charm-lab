@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
 <title>Лаборатория шарма — студия красоты в Перово</title>
 <meta name="description" content="Студия красоты полного цикла в Перово: спа-ритуалы для головы, волосы, ногти, косметология, брови и макияж. Ежедневно с 10 до 21, запись онлайн.">
 <meta name="robots" content="noindex, nofollow">
@@ -125,6 +126,11 @@
 @media (min-width: 900px) {
   #экран-1 > .блок__внутри { min-height: calc(100svh - 160px); }
   #экран-1 .первый-экран__текст { align-self: center; }
+}
+/* Решение 29.09.2026: на телефоне «5.0 на Яндекс Картах · 174 отзыва» видны без прокрутки —
+   фото не выше, чем оставляет экран под текстом, кнопкой и цифрами */
+@media (max-width: 899px) {
+  #экран-1 .первый-экран__картинка { aspect-ratio: auto; height: min(125vw, calc(100svh - 340px)); min-height: 220px; }
 }
 /* Решение 29.09.2026: «Студия красоты полного цикла» чуть крупнее и с воздухом до заголовка — важная строка */
 #экран-1 .кикер { font-size: calc(var(--кегль-кикер) + 1px); }
