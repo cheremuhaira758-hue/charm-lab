@@ -1,6 +1,6 @@
 
 
-:root { color-scheme: only light; }
+  :root { color-scheme: only light; }
 
 body { font: var(--кегль-текст)/1.6 var(--шрифт-текста); color: var(--цвет-текст);
        background: var(--цвет-фон); margin: 0; -webkit-font-smoothing: antialiased; }
@@ -1654,7 +1654,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 
 .первый-экран--разворот .пятно--1 { width: 32.5em; height: 32.5em; left: -10em; top: -7.5em; }
 .первый-экран--разворот .пятно--2 { width: 40em; height: 40em; right: -7.5em; bottom: -12.5em;
-  background: var(--цвет-фон-2); animation-duration: 34s; animation-delay: -12s; }
+  background: var(--фон-2-ключа, var(--цвет-фон-2)); animation-duration: 34s; animation-delay: -12s; }
 .сторона--слева.первый-экран--разворот .пятно--1 { left: auto; right: -10em; }
 .сторона--слева.первый-экран--разворот .пятно--2 { right: auto; left: -7.5em; }
 
