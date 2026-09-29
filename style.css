@@ -1773,3 +1773,33 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05.светлый .кнопка--контур { color: var(--цвет-акцент); }
   #экран-05.тёмный .кнопка--контур { color: var(--цвет-акцент-яркий); }
   @media (max-width: 899px) { #экран-05 .галерея { grid-template-columns: repeat(2, 1fr); } }
+
+/* экран 06 */
+#экран-06 .секция__шапка { margin-bottom: 0; }
+  #экран-06 .оценки { list-style: none; padding: 0; margin: clamp(24px, 3vw, 36px) auto 0; display: flex; flex-wrap: wrap;
+      justify-content: center; gap: .75rem; }
+  #экран-06 .оценка { display: flex; align-items: baseline; gap: .5rem; padding: .6rem 1.1rem; border-radius: 9em; }
+  #экран-06.тёмный .оценка { background: color-mix(in srgb, var(--цвет-тёмный-текст) 10%, transparent); color: var(--цвет-тёмный-текст); }
+  #экран-06.светлый .оценка { background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
+  #экран-06 .оценка b { font-size: var(--кегль-лид); }
+  #экран-06.тёмный .оценка b { color: var(--цвет-акцент-яркий); }
+  #экран-06.светлый .оценка b { color: var(--цвет-акцент); }
+  #экран-06 .цитаты { list-style: none; padding: 0; margin: clamp(32px, 5vw, 56px) 0 0; display: grid;
+      grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 28px); }
+  #экран-06 .мнение { display: grid; grid-template-rows: auto auto 1fr auto; gap: 1rem; padding: clamp(22px, 2.4vw, 32px);
+      border-radius: var(--радиус-карточки); box-shadow: var(--тень); background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
+  #экран-06 .мнение__услуга { justify-self: start; padding: .2em .75em; border-radius: 9em; font-size: var(--кегль-кикер);
+      border: 1px solid currentColor; color: var(--цвет-акцент); }
+  #экран-06 .звёзды { color: var(--цвет-тёплый); font-size: var(--кегль-цифра); letter-spacing: .06em; line-height: 1; }
+  #экран-06 .мнение blockquote { margin: 0; font-size: var(--кегль-текст); line-height: 1.6; }
+  #экран-06 .мнение blockquote::before { content: "«"; }
+  #экран-06 .мнение blockquote::after { content: "»"; }
+  #экран-06 .мнение__автор { display: flex; align-items: center; gap: .75rem; padding-top: 1rem; border-top: 1px solid var(--цвет-линия); }
+  #экран-06 .мнение__буква { display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; flex: none;
+      font-weight: 700; background: var(--цвет-фон-2); color: var(--цвет-акцент-тёмный); }
+  #экран-06 .мнение__автор p { margin: 0; }
+  #экран-06 .мнение__автор b { display: block; }
+  #экран-06 .записаться { margin-top: clamp(28px, 4vw, 44px); display: flex; justify-content: center; }
+  #экран-06.светлый .кнопка--контур { color: var(--цвет-акцент); }
+  #экран-06.тёмный .кнопка--контур { color: var(--цвет-акцент-яркий); }
+  @media (max-width: 899px) { #экран-06 .цитаты { grid-template-columns: 1fr; } }
