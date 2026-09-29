@@ -1803,3 +1803,27 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-06.светлый .кнопка--контур { color: var(--цвет-акцент); }
   #экран-06.тёмный .кнопка--контур { color: var(--цвет-акцент-яркий); }
   @media (max-width: 899px) { #экран-06 .цитаты { grid-template-columns: 1fr; } }
+
+/* экран 07 */
+#экран-07.светлый { --цвет-фон: color-mix(in srgb, var(--цвет-акцент-яркий) 20%, var(--цвет-фон-карточки));
+      --цвет-фон-2: color-mix(in srgb, var(--цвет-акцент-яркий) 28%, var(--цвет-фон-карточки)); }
+  #экран-07 .контакты { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+  #экран-07 .контакты__запись { display: grid; gap: 1.25rem; justify-items: start; }
+  #экран-07 .контакты__запись .секция__шапка { margin-bottom: 0; }
+  #экран-07 .контакты__запись p { margin: 0; }
+  #экран-07 .приглашение { font-size: var(--кегль-лид); max-width: 460px; }
+  #экран-07 .список { list-style: none; margin: 0; padding: clamp(8px, 1vw, 12px) clamp(22px, 2.4vw, 32px);
+      border-radius: var(--радиус-карточки); box-shadow: var(--тень); }
+  #экран-07.светлый .список { background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
+  #экран-07.тёмный .список { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); }
+  #экран-07 .строка { display: grid; grid-template-columns: 130px 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--цвет-линия); }
+  #экран-07.тёмный .строка { border-bottom-color: color-mix(in srgb, var(--цвет-тёмный-текст) 20%, transparent); }
+  #экран-07 .строка:last-child { border-bottom: 0; }
+  #экран-07 .строка__что { color: var(--цвет-текст-тихий); }
+  #экран-07.тёмный .строка__что { color: color-mix(in srgb, var(--цвет-тёмный-текст) 70%, transparent); }
+  #экран-07 .строка a { color: inherit; font-weight: 600; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: .2em; }
+  #экран-07 .строка__маршрут { display: block; margin-top: .25rem; font-weight: 600; }
+  #экран-07.светлый .строка a.строка__маршрут { color: var(--цвет-акцент); }
+  #экран-07.тёмный .строка a.строка__маршрут { color: var(--цвет-акцент-яркий); }
+  @media (max-width: 899px) { #экран-07 .контакты { grid-template-columns: 1fr; } }
+  @media (max-width: 499px) { #экран-07 .строка { grid-template-columns: 1fr; gap: .15rem; } }
