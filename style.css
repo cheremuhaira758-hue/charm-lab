@@ -1681,10 +1681,40 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-02 .ряд__номер { font-size: var(--кегль-цифра); color: var(--цвет-акцент); line-height: 1; }
   #экран-02.тёмный .ряд__номер { color: var(--цвет-акцент-яркий); }
   #экран-02 h3 { margin: 0; font-size: var(--кегль-h2); line-height: 1.15; }
+  #экран-02.светлый .кнопка--контур { color: var(--цвет-акцент); }
+  #экран-02.тёмный .кнопка--контур { color: var(--цвет-акцент-яркий); }
   #экран-02 .ряд__цена { font-size: var(--кегль-лид); font-weight: 700; padding-top: .9rem;
       border-top: var(--нить) solid var(--цвет-линия); width: 100%; }
   #экран-02.тёмный .ряд__цена { border-top-color: color-mix(in srgb, var(--цвет-тёмный-текст) 25%, transparent); }
   @media (max-width: 899px) {
     #экран-02 .ряд, #экран-02 .ряд:nth-child(even) { grid-template-columns: 1fr; }
     #экран-02 .ряд:nth-child(even) .заглушка-картинки { order: 0; }
+  }
+
+/* экран 03 */
+#экран-03 .афиши { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(16px, 2.5vw, 32px); margin-top: clamp(28px, 4vw, 48px); align-items: stretch; }
+  #экран-03 .афиша { display: grid; grid-template-columns: 40% 1fr; overflow: hidden; border-radius: var(--радиус-карточки); box-shadow: var(--тень); }
+  #экран-03.светлый .афиша { background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
+  #экран-03.тёмный .афиша { background: var(--цвет-тёмный-фон-2); color: var(--цвет-тёмный-текст); }
+  #экран-03 .заглушка-картинки { min-height: 100%; aspect-ratio: auto; }
+  #экран-03 .афиша__тело { display: grid; gap: .5rem; justify-items: start; padding: clamp(20px, 2vw, 28px); }
+  #экран-03 .афиша__тело p { margin: 0; }
+  #экран-03 .афиша__имя { font-size: var(--кегль-кикер); letter-spacing: var(--разрядка-кикера); text-transform: uppercase; color: var(--цвет-акцент); }
+  #экран-03.тёмный .афиша__имя { color: var(--цвет-акцент-яркий); }
+  #экран-03 h3 { margin: 0; font-size: var(--кегль-лид); }
+  #экран-03 .афиша__цена { font-size: var(--кегль-цифра); font-weight: 700; line-height: 1.1; }
+  #экран-03 .афиша .кнопка { margin-top: .75rem; }
+  #экран-03.светлый .афиша .кнопка--контур { color: var(--цвет-акцент); }
+  #экран-03.тёмный .афиша .кнопка--контур { color: var(--цвет-акцент-яркий); }
+  #экран-03 .пояснение { margin: 1.5rem 0 0; }
+  #экран-03 .прайс { margin-top: .75rem; }
+  #экран-03 .прайс summary { cursor: pointer; font-weight: 600; color: var(--цвет-акцент); list-style: none; }
+  #экран-03.тёмный .прайс summary { color: var(--цвет-акцент-яркий); }
+  #экран-03 .прайс summary::-webkit-details-marker { display: none; }
+  #экран-03 .прайс ul { margin: .75rem 0 0; padding-left: 1.1rem; display: grid; gap: .35rem; }
+  #экран-03 .прайс__часть { margin: 1rem 0 0; font-weight: 600; }
+  @media (max-width: 899px) {
+    #экран-03 .афиши { grid-template-columns: 1fr; }
+    #экран-03 .афиша { grid-template-columns: 1fr; }
+    #экран-03 .заглушка-картинки { min-height: 0; aspect-ratio: 16 / 9; }
   }
