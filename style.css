@@ -1673,6 +1673,13 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 02 */
 #экран-02.светлый { --цвет-фон: color-mix(in srgb, var(--цвет-акцент-яркий) 20%, var(--цвет-фон-карточки));
       --цвет-фон-2: color-mix(in srgb, var(--цвет-акцент-яркий) 28%, var(--цвет-фон-карточки)); }
+
+  #экран-02.светлый { --персик: color-mix(in srgb, var(--цвет-тёплый) 60%, var(--цвет-тёплый-мягкий));
+      background: radial-gradient(circle 560px at 90% 10%, color-mix(in srgb, var(--персик) 45%, transparent), transparent 70%),
+        linear-gradient(180deg, color-mix(in srgb, var(--цвет-тёплый-мягкий) 70%, var(--цвет-фон-карточки)), color-mix(in srgb, var(--цвет-тёплый-мягкий) 40%, var(--цвет-фон-карточки))); }
+  @media (max-width: 700px) { #экран-02.светлый { background:
+        radial-gradient(circle 260px at 95% 4%, color-mix(in srgb, var(--персик) 45%, transparent), transparent 70%),
+        linear-gradient(180deg, color-mix(in srgb, var(--цвет-тёплый-мягкий) 70%, var(--цвет-фон-карточки)), color-mix(in srgb, var(--цвет-тёплый-мягкий) 40%, var(--цвет-фон-карточки))); } }
   #экран-02 .ряды { display: grid; gap: clamp(48px, 7vw, 96px); margin-top: clamp(32px, 5vw, 64px); }
   #экран-02 .ряд { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
   #экран-02 .ряд:nth-child(even) { grid-template-columns: 1fr 1.1fr; }
@@ -1696,6 +1703,15 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 03 */
 #экран-03.светлый { --цвет-фон: color-mix(in srgb, var(--цвет-акцент-яркий) 7%, var(--цвет-фон-карточки));
       --цвет-фон-2: color-mix(in srgb, var(--цвет-акцент-яркий) 11%, var(--цвет-фон-карточки)); }
+
+  #экран-03.светлый { --персик: color-mix(in srgb, var(--цвет-тёплый) 60%, var(--цвет-тёплый-мягкий));
+      background: radial-gradient(circle 520px at 96% 6%, color-mix(in srgb, var(--персик) 75%, transparent), color-mix(in srgb, var(--персик) 25%, transparent) 45%, transparent 72%),
+        radial-gradient(circle 420px at 3% 94%, color-mix(in srgb, var(--персик) 60%, transparent), color-mix(in srgb, var(--персик) 20%, transparent) 45%, transparent 72%),
+        var(--цвет-фон); }
+  @media (max-width: 700px) { #экран-03.светлый { background:
+        radial-gradient(circle 260px at 100% 2%, color-mix(in srgb, var(--персик) 75%, transparent), color-mix(in srgb, var(--персик) 25%, transparent) 45%, transparent 72%),
+        radial-gradient(circle 220px at 0% 98%, color-mix(in srgb, var(--персик) 60%, transparent), transparent 72%),
+        var(--цвет-фон); } }
   #экран-03 .афиши { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(16px, 2.5vw, 32px); margin-top: clamp(28px, 4vw, 48px); align-items: stretch; }
   #экран-03 .афиша { display: grid; grid-template-columns: 40% 1fr; overflow: hidden; border-radius: var(--радиус-карточки); box-shadow: var(--тень); }
   #экран-03.светлый .афиша { background: var(--цвет-фон-карточки); color: var(--цвет-текст); }
