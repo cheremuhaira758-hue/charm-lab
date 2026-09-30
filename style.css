@@ -1823,6 +1823,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 07 */
 #экран-07.светлый { --цвет-фон: color-mix(in srgb, var(--цвет-акцент-яркий) 20%, var(--цвет-фон-карточки));
       --цвет-фон-2: color-mix(in srgb, var(--цвет-акцент-яркий) 28%, var(--цвет-фон-карточки)); }
+
+  #экран-07.светлый { background: linear-gradient(180deg, var(--цвет-фон) 0%, var(--цвет-фон) 25%, var(--цвет-тёплый-мягкий) 100%); }
   #экран-07 .контакты { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
   #экран-07 .контакты__запись { display: grid; gap: 1.25rem; justify-items: start; }
   #экран-07 .контакты__запись .секция__шапка { margin-bottom: 0; }
